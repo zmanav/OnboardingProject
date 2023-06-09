@@ -1,0 +1,338 @@
+{
+	"info": {
+		"_postman_id": "422b12c7-3bea-43e3-b8a9-0917b434b5e5",
+		"name": "Dummy Project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27824203"
+	},
+	"item": [
+		{
+			"name": "test",
+			"item": [
+				{
+					"name": "async",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"manav_async\",\n    \"address\": \"feceecedce\",\n    \"email\": \"kl@kk_new2.com\",\n    \"rating\": 2.09,\n    \"id\": 2\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}/api/v1/async/restaurants/fetch_response?id=4a2250fd-d4be-4439-9e39-032f79b3137b",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"async",
+								"restaurants",
+								"fetch_response"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "4a2250fd-d4be-4439-9e39-032f79b3137b"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Async",
+			"item": [
+				{
+					"name": "Fetch Request Data",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/api/v1/async/restaurants/fetch_response?id=071a3226-fdad-4c2f-abfb-67ecb483db7f",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"async",
+								"restaurants",
+								"fetch_response"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "071a3226-fdad-4c2f-abfb-67ecb483db7f",
+									"description": "Id for request"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "All Restaurants",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/api/v1/async/restaurants/",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"async",
+								"restaurants",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Restaurant",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/api/v1/async/restaurants/16",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"async",
+								"restaurants",
+								"16"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Restaurant",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"manav_async_edit\",\n    \"address\": \"feceecedce_14\",\n    \"email\": \"kl@kk_new2.com\",\n    \"rating\": 2.09\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}/api/v1/async/restaurants/14",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"async",
+								"restaurants",
+								"14"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Restaurant",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/api/v1/async/restaurants/3",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"async",
+								"restaurants",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Resturant",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"manav_async_edit\",\n    \"address\": \"feceecedce_16\",\n    \"email\": \"kl@kk_new2.com\",\n    \"rating\": 2.09\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}/api/v1/async/restaurants/",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"async",
+								"restaurants",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Sync",
+			"item": [
+				{
+					"name": "All Restaurants",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/api/v1/sync/restaurants/",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"sync",
+								"restaurants",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Restaurant",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"manav_async_edit\",\n    \"address\": \"feceecedce\",\n    \"email\": \"kl@kk_new2.com\",\n    \"rating\": 2.09\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}/api/v1/sync/restaurants/16",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"sync",
+								"restaurants",
+								"16"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Restaurant",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/api/v1/sync/restaurants/14",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"sync",
+								"restaurants",
+								"14"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Resturant",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"manav_async_edit\",\n    \"address\": \"feceecedce\",\n    \"email\": \"kl@kk_new2.com\",\n    \"rating\": 2.09\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}/api/v1/sync/restaurants/",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"sync",
+								"restaurants",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Restaurant",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/api/v1/sync/restaurants/19",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"sync",
+								"restaurants",
+								"19"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
